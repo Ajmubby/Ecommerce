@@ -27,13 +27,13 @@ export default function Navbar() {
                 </Link>
             </li>
             <li>
-                <Link href='/' className='flex flex-col'>
-                <span>Mubby</span>
-                <span>Skincare</span>
+                <Link href='/' className='flex flex-col text-center text-3xl'>
+                <span>Ómóluabi</span>
+                <span></span>
                 </Link>
             </li>
         </ul>
-        <div className='flex flex-col'>
+        <div className='flex flex-col align-middle'>
 
         <ul className={`md:hidden ${open ? 'flex': 'hidden'} cursor-pointer`}>
             <li onClick={controlNav}>
