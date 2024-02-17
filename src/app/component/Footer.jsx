@@ -10,24 +10,23 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className={`h-[40vh] bg-gray-200 ${styles.footer}`}>
+    <footer className={`h-[40vh] bg-gray-200 ${styles.footer} space-x-20`}>
 
         <div className='flex items-start'>
             <section>
                 <h2 className='text-3xl'><Link href='/'>Ómóluabi</Link></h2>
                 <ul>
                     <li>
-                        <p className='text-slate-500 pt-3'>&copy; 2022 design and developed by <Link href='/' className='text-red-400'>Mubarak.</Link> Powered by <Link href='/' className='text-red-400'>Masculine.</Link></p>
+                        <p className='text-slate-500 '>&copy; 2024 design and developed <br /> by <Link href='/' className='text-red-400'>Mubarak. <br /></Link> Powered by <Link href='/' className='text-red-400'>Masculine.</Link></p>
                     </li>
                     
                 </ul>
             </section>
             <section>
                 <ul>
-                    <li>
-                        <p className='text-slate-500 pt-5'>No. 654 - Ogunlana Drive,24b Lagos, Nigeria. ajuwonmubarak4@gmail.com  +2349070874182</p>
-                        <p></p>
-                        <p></p>
+                    <li className='text-slate-500 pt-6'>
+                        <p >No. 654 - Ogunlana Drive, <br /> 24b Lagos, Nigeria. <br /> ajuwonmubarak4@gmail.com <br /> +2349070874182</p>
+                        
                     </li>
                     
                 </ul>
@@ -36,18 +35,18 @@ export default function Footer() {
                 <h2>GET 32% OFF</h2>
                 <ul>
                     <li>
-                        <p className='text-slate-500 pt-3'>By subscribe to our newsletter</p>
+                        <p className='text-slate-600 '>By subscribe to our newsletter</p>
                     </li>
-                    <form>
-                        <input type="email" name="enter email" id="email" placeholder='Enter your Email' className='border rounded-xl px-7 mx-6 mt-3 ml-0'/>
+                    <form className='mr-3'>
+                        <input type="email" name="enter email" id="email" placeholder='Enter your Email' className='border rounded-full px-1 mx-1 mt-3 pt-2 pb-2 mr-24 w-[300px] h-[30px]'/>
                     </form>
                     
                 </ul>
             </section>
             <section>
-                <h2>Follow Us</h2>
-                <ul>
-                    <li>
+                    <h2>Follow Us</h2>
+                <ul className='pt-10 ml-10'>
+                    <li className='space-x-4'>
                         <Link href='/'>
                             <span><FaGithub /></span>
                         </Link>
@@ -66,9 +65,6 @@ export default function Footer() {
                     
                 </ul>
             </section>
-        </div>
-        <div>
-
         </div>
     </footer>
   )

@@ -4,6 +4,7 @@
 
 .footer h2{
     font-weight: 800;
+    padding: 0px 40px;
 }
 
 
@@ -12,8 +13,11 @@
     display: flex;
 }
 
+.footer li{
+    line-height: 32px;
+}
 .footer ul{
-    padding-right: 150px;
+    padding: 20px 30px;
 }
 
 .footer div:first-of-type{

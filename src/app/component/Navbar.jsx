@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { TfiShoppingCart } from "react-icons/tfi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import { IoIosSearch } from "react-icons/io";
+
 
 
 
@@ -19,7 +21,7 @@ export default function Navbar() {
     }
 
   return (
-    <nav className='flex justify-between px-[2rem] py-8'>
+    <nav className='flex justify-between px-[2rem] py-8 bg-zinc-200 h-[80vh]'>
         <ul className='flex items-start gap-4'>
             <li >
                 <Link href='/'>
@@ -46,7 +48,7 @@ export default function Navbar() {
             </li>
         </ul>
 
-        <ul className={`md:flex  ${open ? 'hidden' : 'flex flex-col'} justify-center gap-6 pt-2`}>
+        <ul className={`md:flex  ${open ? 'hidden' : 'flex flex-col'} justify-items-center gap-6 pt-1`}>
             <li>
                 <Link href='/about'>About</Link>
             </li>
@@ -59,6 +61,9 @@ export default function Navbar() {
             <li>
                 <Link href='/contact'>Contact</Link>
             </li>
+            <form>
+                <input type="search" alt='search' id='search' placeholder='search...' className='w-[200px] h-[30px] px-2 rounded-full border-solid '/>
+            </form>
             <li>
                 <Link href='/cart' className='flex items-center gap-2'>
                     <TfiShoppingCart />
