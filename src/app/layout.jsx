@@ -1,9 +1,9 @@
-import { Courgette } from "next/font/google";
+import { Neuton } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 
-const inter = Courgette({ subsets: ["latin"], weight: ['400'] });
+const inter = Neuton({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
   title: "Ómóluabi  for the Cὺltὺre",

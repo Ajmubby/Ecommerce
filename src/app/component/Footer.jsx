@@ -10,9 +10,9 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className={`h-[40vh] bg-gray-200 ${styles.footer} space-x-20`}>
+    <footer className={`h-[40vh] bg-gray-200 ${styles.footer}`}>
 
-        <div className='flex items-start'>
+        <div className='flex items-start gap-20 p-20'>
             <section>
                 <h2 className='text-3xl'><Link href='/'>Ómóluabi</Link></h2>
                 <ul>
@@ -45,7 +45,7 @@ export default function Footer() {
             </section>
             <section>
                     <h2>Follow Us</h2>
-                <ul className='pt-10 ml-10'>
+                <ul className='pt-10 ml-5'>
                     <li className='space-x-4'>
                         <Link href='/'>
                             <span><FaGithub /></span>

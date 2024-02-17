@@ -21,7 +21,7 @@ export default function Navbar() {
     }
 
   return (
-    <nav className='flex justify-between px-[2rem] py-8 bg-zinc-200 h-[80vh]'>
+    <nav className='flex justify-between py-8 bg-zinc-200 h-[80vh] px-24'>
         <ul className='flex items-start gap-4'>
             <li >
                 <Link href='/'>
@@ -65,7 +65,7 @@ export default function Navbar() {
                 <input type="search" alt='search' id='search' placeholder='search...' className='w-[200px] h-[30px] px-2 rounded-full border-solid '/>
             </form>
             <li>
-                <Link href='/cart' className='flex items-center gap-2'>
+                <Link href='/cart' className='flex items-center gap-1'>
                     <TfiShoppingCart />
                     <span>{cart}</span>
                 </Link>

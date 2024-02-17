@@ -1,4 +1,5 @@
 import React from 'react'
+import MainProducts from './component/MainProducts'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <div>
         <ul>
           <li>
-            
+            <MainProducts/>
           </li>
         </ul>
       </div>
