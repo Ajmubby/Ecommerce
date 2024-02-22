@@ -6,12 +6,15 @@ import { TfiShoppingCart } from "react-icons/tfi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
+import { GoPerson } from "react-icons/go";
+import { IoAddSharp } from "react-icons/io5";
+import Rightnav from './Rightnav';
+import LeftNavBig from './LeftNavBig';
+import LeftNavSmall from './LeftNavSmall';
 
 
 
-
-
-export default function Navbar() {
+export default function Navbar(sort,search) {
     const [cart, setCart] = useState(0)
     
     const [open, setOpen] = useState(true)
@@ -19,59 +22,21 @@ export default function Navbar() {
     function controlNav(){
         setOpen(!open)
     }
+    
+    function addOne(){
+        setCart(prev => prev + 1)
+    }
 
   return (
-    <nav className='flex justify-between py-8 bg-zinc-200 h-[80vh] px-24'>
-        <ul className='flex items-start gap-4'>
-            <li >
-                <Link href='/'>
-                    <Image src='/logo.png' width="32" height="32"  className='rounded-full'/>
-                </Link>
-            </li>
-            <li>
-                <Link href='/' className='flex flex-col text-center text-3xl'>
-                <span>Ómóluabi</span>
-                <span></span>
-                </Link>
-            </li>
-        </ul>
-        <div className='flex flex-col align-middle'>
-
-        <ul className={`md:hidden ${open ? 'flex': 'hidden'} cursor-pointer`}>
-            <li onClick={controlNav}>
-                <GiHamburgerMenu  />
-            </li>
-        </ul>
-        <ul className={`md:hidden ${open ? 'hidden': 'flex'} cursor-pointer`}>
-            <li onClick={controlNav}>
-                <RxCross2 />
-            </li>
-        </ul>
-
-        <ul className={`md:flex  ${open ? 'hidden' : 'flex flex-col'} justify-items-center gap-6 pt-1`}>
-            <li>
-                <Link href='/about'>About</Link>
-            </li>
-            <li>
-                <Link href='/shop'>Shop</Link>
-            </li>
-            <li>
-                <Link href='/page'>Page</Link>
-            </li>
-            <li>
-                <Link href='/contact'>Contact</Link>
-            </li>
-            <form>
-                <input type="search" alt='search' id='search' placeholder='search...' className='w-[200px] h-[30px] px-2 rounded-full border-solid '/>
-            </form>
-            <li>
-                <Link href='/cart' className='flex items-center gap-1'>
-                    <TfiShoppingCart />
-                    <span>{cart}</span>
-                </Link>
-            </li>
-        </ul>
-        </div>
+   
+    <nav className='flex  justify-end py-8 bg-zinc-200 px-24'>
+        {open ? 
+    <LeftNavBig open={open} sort={sort} search={search}/>
+    :
+    <LeftNavSmall sort={sort} search={search}/>
+    }
+        
+        <Rightnav open={open} controlNav={controlNav} cart={cart}/>
     </nav>
   )
 }
