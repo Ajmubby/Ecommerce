@@ -32,11 +32,11 @@ export default function Rightnav({open,controlNav, cart, addOne}) {
                     <GiHamburgerMenu  />
                 </li>
             </ul>
-            <div className={`md:hidden ${open ? 'hidden': 'flex'} cursor-pointer`}>
-                <li onClick={controlNav}>
+            <section className={`md:hidden ${open ? 'hidden': 'flex'} cursor-pointer`}>
+                <div onClick={controlNav}>
                     <RxCross2 />
-                </li>
-            </div>
+                </div>
+            </section>
         </div>
 
   )

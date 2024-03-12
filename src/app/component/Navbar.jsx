@@ -1,13 +1,5 @@
 "use client"
-import Image from 'next/image'
-import Link from 'next/link'
 import { useState } from 'react';
-import { TfiShoppingCart } from "react-icons/tfi";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross2 } from "react-icons/rx";
-import { IoIosSearch } from "react-icons/io";
-import { GoPerson } from "react-icons/go";
-import { IoAddSharp } from "react-icons/io5";
 import Rightnav from './Rightnav';
 import LeftNavBig from './LeftNavBig';
 import LeftNavSmall from './LeftNavSmall';

@@ -1,7 +1,7 @@
 import React from 'react'
 import Shop from './Shop'
 
-export default function page() {
+export default function ShopHome() {
   return (
     <div><Shop /></div>
   )

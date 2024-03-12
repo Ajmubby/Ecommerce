@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className={`min-h-[40vh] bg-gray-200 ${styles.footer}`}>
 
-        <div className='grid md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4 px-28 py-20'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-28 py-20'>
             <section>
                 <h2 className='text-3xl'><Link href='/'>Ómóluabi<sup>&trade;</sup></Link></h2>
                 <ul>
@@ -40,7 +40,7 @@ export default function Footer() {
                         <p className='text-slate-600 '>By subscribe to our newsletter</p>
                     </li>
                     <form className='flex relative pt-2'>
-                        <input type="email" name="enter email" id="email" placeholder='Enter your Email' className='w-[300px] h-[32px] px-2 rounded-full border-solid '/>
+                        <input type="email" name="enter email" id="email" placeholder='Enter your Email' className='w-[250px] h-[32px] px-2 rounded-full border-solid outline-none '/>
                         <button className='z-50 ml-[-20px]'><CiPaperplane/></button>
 
                     </form>
@@ -49,7 +49,7 @@ export default function Footer() {
             </section>
             <section>
                     <h2>Follow Us</h2>
-                <ul className='pt-10 ml-2'>
+                <ul className=' '>
                     <li className='space-x-4'>
                         <Link href='https://github.com/Ajmubby'>
                             <span><FaGithub /></span>
@@ -62,7 +62,7 @@ export default function Footer() {
                         <Link href='https://twitter.com/AjMubby'>
                             <span><RiTwitterXFill /></span>
                         </Link>
-                        <Link href=''>
+                        <Link href='https://www.linkedin.com/in/mubarak-ajuwon/'>
                             <span><FaLinkedin /></span>
                         </Link>
                     </li>

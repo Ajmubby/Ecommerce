@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    /* overflow-x: hidden; */
+}
+
+.slick-prev {
+    left: -15% !important;
+}
+
+.slick-next {
+    right: -15% !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #161515 !important;
+}

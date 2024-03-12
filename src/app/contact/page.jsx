@@ -16,12 +16,12 @@ export default function Contact() {
   const handleSubmit = (task) => { task.preventDefault();
     setEmail("");
     setName("");
-    setMessage("");
+    setMessage("");er
     alert (`Name: ${name} Message: ${message} Email: ${email}`);
 
   };
   return (
-    <div>
+  <div>
         <article className='h-100'>
         <nav className='h-60 bg-gray-200 flex justify-center'>
        <ul>
@@ -38,7 +38,7 @@ export default function Contact() {
     <section className='px-5 py-20'>
         <h1 className='font-bold text-2xl'>Contact US</h1>
         <article>
-        <address className='text-stone-400 pt-2'>
+        <address className='text-stone-400 '>
         No. 654 - Ogunlana Drive, 24b Surulere, Lagos, Nigeria.<br />
         <br />
         </address>
@@ -76,17 +76,17 @@ export default function Contact() {
         
         <form className='flex flex-col gap-3 w-[100]'>
           <span className='flex gap-4'>
-          <input className='border-2 rounded-lg border-stone-400 py-4 placeholder:p-4 placeholder:mx-4 text-stone-400 w-1/2' type="text" id="name" name="name"  placeholder='Your Name'required />
+          <input className='border-2 rounded-lg border-stone-400 py-4 placeholder:p-4 placeholder:mx-4 text-black w-1/2 outline-none' type="text" id="name" name="name"  placeholder='Your Name'required />
             
-            <input className='border-2 rounded-lg border-stone-400 placeholder:p-4 text-stone-400 w-1/2' type="email" id="email" name="email"  placeholder='Your Email'required /></span> 
+            <input className='border-2 rounded-lg border-stone-400 placeholder:p-4 text-black w-1/2 outline-none' type="email" id="email" name="email"  placeholder='Your Email'required /></span> 
             
             
-            <textarea className=' border-2 rounded-lg border-stone-400 py-20 placeholder:px-5 placeholder:py-[-20]  text-stone-400' id="message" name="message" placeholder='Example Text' required></textarea>
+            <textarea className=' border-2 rounded-lg border-stone-400 py-20 placeholder:px-5 placeholder:py-[-20] text-black outline-none' id="message" name="message" placeholder='Example Text' required></textarea>
             
-            <button className='border rounded-xl bg-zinc-500 text-black my-5 py-2 w-2/5 font-bold' type="submit" onClick={handleSubmit}>Submit</button>
+            <button className='border rounded-xl bg-black text-white my-5 py-2 w-2/5 ' type="submit" onClick={handleSubmit}>Submit</button>
         </form>
     </section>
         </div>
-    </div>
+  </div>
   )
 }
