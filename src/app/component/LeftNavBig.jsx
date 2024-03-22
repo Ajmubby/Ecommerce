@@ -20,7 +20,7 @@ export default function LeftNavBig({open, sort, search}) {
 
         
             <li>
-                <Link href='/about'>About</Link>
+                <Link href='/About'>About</Link>
             </li>
             <li>
                 <Link href='/Shop'>Shop</Link>

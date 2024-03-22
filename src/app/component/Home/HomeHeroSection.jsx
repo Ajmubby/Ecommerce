@@ -32,16 +32,17 @@ export default function HomeHeroSection() {
                                         <h1 className="text-6xl mt-4 mb-10">New Product <br /> Collection</h1>
                                     </Animate.Reveal>
                                     <Animate.Reveal bottom delay={500}>
-                                        <Link href="/shop" className="uppercase underline">Discover More</Link>
+                                        <Link href="/Shop" className="uppercase underline">Discover More</Link>
                                     </Animate.Reveal>
                                 </div>
                                 <div className="md:col-span-1 col-span-2">
                                     <div style={{
-                                        background: `url("/facials-bg.png")`,
+                                        background: `url("/facials-bg.jpg")`,
                                         backgroundSize: 'cover',
                                         width: "100%",
                                         height: "400px",
-                                        backgroundPosition: "center"
+                                        backgroundPosition: "center",
+                                        backgroundRepeat: "no-repeat"
                                     }}></div>
                                 </div>
                             </div>

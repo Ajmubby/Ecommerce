@@ -28,7 +28,7 @@ export default function Navbar(sort,search) {
     <LeftNavSmall sort={sort} search={search}/>
     }
         
-        <Rightnav open={open} controlNav={controlNav} cart={cart}/>
+    <Rightnav open={open} controlNav={controlNav} cart={cart}/>
     </nav>
   )
 }
