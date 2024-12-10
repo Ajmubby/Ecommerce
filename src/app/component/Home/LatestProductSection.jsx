@@ -25,7 +25,7 @@ export default function LatestProductSection() {
 
             <div className='lg:col-span-1 md:col-span-2 col-span-4'>
                 <Link href='/Shop'>
-                    <Image src='/puresolution.png' width={300} height={300} className='h-72 w-72 bg-zinc-200'/>
+                    <Image src='/pure-solution.png' width={300} height={300} className='h-72 w-72 bg-zinc-200'/>
                     <p className='text-slate-400'>Ómóluabi Pure-Solution Perfume</p>
                     <p>&#8358;3999.99</p>
                 </Link>
@@ -41,7 +41,7 @@ export default function LatestProductSection() {
 
             <div className='lg:col-span-1 md:col-span-2 col-span-4 '>
                 <Link href='/Shop'>
-                    <Image src='/boos-perfume.png' width={300} height={300} className='h-72 w-72 bg-zinc-200'/>
+                    <Image src='/boss-perfume.png' width={300} height={300} className='h-72 w-72 bg-zinc-200'/>
                     <p className='text-slate-400'>Ómóluabi Boss-Perfume</p>
                     <p>&#8358;2555.99</p>
                 </Link>
